@@ -232,8 +232,10 @@ main #form #form-formulario form button{
     background-size: contain;
  }
 
+ /* estilizar a página de login */
  main #form.form-sem-cachorro #form-formulario{
     background-image: none;
+    
  }
 
 
