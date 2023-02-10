@@ -1,0 +1,25 @@
+/* media query */
+
+/* se (minha tela for menor ou igual a 990px), então faça algo */
+/* para quando a tela for menor, a escrita fique por baixo */
+@media(max-width: 990px){
+    #bemVindo{
+        display: block;
+    }
+}
+
+/* para a imagem sumir quando chegar em 670 */
+@media(max-width: 670px){
+    main #form #form-formulario{
+        background-image: none;
+    }
+}
+
+/* para os benefícios ficarem em bloco quando chegar em 437 */
+@media(max-width: 437px){
+    main #beneficios #beneficios-servicos{
+        display: block;
+    }
+}
+
+

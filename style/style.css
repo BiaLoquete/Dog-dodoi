@@ -1,0 +1,242 @@
+:root{
+
+    /*variáveis para cor*/
+    --cor-principal: #EA1C81;
+    --cor-topo: #D8F1FB;
+    --cor-preta: black;
+    --cor-branca: white;
+    --cor-roxa: purple;
+    --cor-fundo: #FAFBFF;
+    --cor-rosa: pink;
+
+}
+
+*{
+    /* muda todo o site */
+
+    /* tira toda a margem */
+    margin: 0px;
+
+    /* espaçamento interno */
+    padding: 0px;
+
+    /* tempo da transição quando passar o mouse */
+    transition: all 1s;
+
+    /* alinha */
+    box-sizing: border-box;
+}
+#header{ 
+    /* vinculado com o header do html */
+
+    /* cor de fundo do header */
+    background-color: var(--cor-topo);
+
+    /* Deixa os itens em blocos flexíveis */
+    display: flex;
+
+    /* deixa um item em cada ponta */
+    justify-content: space-between;
+
+    /*espaçamento do header  */
+    padding: 20px;
+
+    /*centralizar os itens  */
+    align-items: center;
+}
+
+#header nav a{
+    /* modo cascata para chegar até o A do html
+     */
+
+     /* tirar a decoração da letra */
+    text-decoration: none;
+
+    /*trocar a cor da letra */
+    color: var(--cor-preta);
+}
+
+#header nav a:hover{
+    /* para quando passar o mouse, mudar algo */
+
+    /* para trocar a cor da letra */
+    background-color: var(--cor-principal);
+
+    /* para deixar a borda mais redonda */
+    border-radius: 20px;
+
+    /* espaçamento interno da borda quando passar o mouse*/
+    padding: 10px;
+
+    /* mudar a cor da letra quando passar o mouse */
+    color: var(--cor-branca);    
+}
+
+/* não fiz a mesma coisa do hover, pq está lincado ao benefícios do html e ele está em classe */
+.marginLateral{
+
+    /* para dar espaço entre as coisas do head */
+    margin: 0px 20px;
+}
+
+
+main #banner{
+
+    /* imagem de fundo do banner */
+    background-image: url(../img/Banner.png);
+
+    /* porcentagem que a imagem vai pegar da tela */
+    height: calc(100vh - 116px);
+
+    /* quantas vezes a imagem vai se repetir */
+    background-repeat: no-repeat;
+
+    /* para manter ele centralizado no meio */
+    background-position: center center;
+
+    /* preenche toda a tela */
+    background-size: cover;
+
+    /* para deixar a escrita do banner no centro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* para mudar a cor da escrita no banner */
+    color: var(--cor-roxa);
+}
+
+ /* para distanciar a escrita do banner */
+ /* tem que vincular com o melhores duidados do html */
+.marginCimaBaixo{
+    margin: 20px 0px;
+}
+
+/* para mudar a cor de uma das frases do banner */
+main #banner h1{
+    color: var(--cor-principal);
+    font-size: 2em;
+}
+
+/* estilizar o botão do banner */
+main #banner button{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+}
+/* para aparecer uma mãozinho quando clicar no botão */
+main #banner button:hover{
+    cursor: pointer;
+}
+
+/* para mudar o padding de todos, é só colocar #header, e o nome */
+
+#bemVindo{
+    /* para dividir as colunas */
+    display: grid;
+
+    /*quantidade de colunas */
+    grid-template-columns: 1fr 1fr;
+
+    /* para dar espaçamento entre as colunas */
+    gap: 20px;
+
+    /*para dar um espaço das laterais */
+    padding: 35px;
+}
+ 
+#bemVindo #boasVindas h3{
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+main #beneficios{
+    /* cor de fundo da parte de benefícios */
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+
+}
+
+main #beneficios #beneficios-nossosBeneficios{
+    /*escrita dos benefícios */
+    text-align: center;
+    
+}
+
+main #beneficios-servicos{
+    /* para separar os benefícios */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin: 30px;
+
+}
+
+/* para estilizar o footer */
+#rodape{
+    background-color: var(--cor-topo);
+    text-align: center;
+    
+}
+
+/* para mudar o padding de tudo que está citado */
+#header , main #banner button, #bemVindo div ,#rodape{
+    padding: 20px;
+}
+
+/* para estilizar o forms */
+main #form #form-texto{
+    text-align: center;
+}
+main #form #form-formulario form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+main #form #form-formulario form input{
+    /* para o texto ficar por cima do formulário */
+    display: block;
+    padding: 8px;
+    border: none;
+
+    /* para tirar a borda quando clica */
+    outline: none;
+
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    /* para mudar o comprimento do formulário */
+    width: 300px;
+}
+
+/* para mudar o botão do forms */
+main #form #form-formulario form button{
+    padding: 8px;
+    border: none;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    border-radius: 10px;
+    width: 300px;
+    cursor: pointer;
+}
+ /* colocar imagem */
+ main #form #form-formulario{
+    background-image: url(../img/dog.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+ }
+
+ main #form.form-sem-cachorro #form-formulario{
+    background-image: none;
+ }
+
+
+
+
+
